@@ -27,4 +27,8 @@ public class Library {
         String timeString = dateTimeFormatter.print(date);
         printStream.println("Welcome to the library! The current time is " + timeString);
     }
+
+    public void removeBook(String bookName) {
+        this.books.remove(bookName);
+    }
 }
